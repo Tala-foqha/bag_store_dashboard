@@ -18,7 +18,11 @@ class CustomTextField extends StatelessWidget {
       maxLines: maxLine,
       obscureText:obscureText ,
       controller:controller ,
-      validator: validator,
+      validator:validator?? (value){
+        if(value!.isEmpty||value==null){
+          return 'please enter field';
+        }
+      },
       decoration: InputDecoration(
         
         fillColor: Colors.white70,

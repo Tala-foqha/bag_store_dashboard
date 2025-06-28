@@ -26,6 +26,7 @@ class AddProductsTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Form(
+      
       key: formKey,
       autovalidateMode: autovalidateMode,
       child: Column(

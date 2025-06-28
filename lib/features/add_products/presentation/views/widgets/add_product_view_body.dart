@@ -1,6 +1,8 @@
 // features/add_products/presentation/views/widgets/add_product_view_body.dart
 import 'dart:io';
 
+import 'package:bag_store_dash_board/core/helper_function/build_error_bar.dart';
+import 'package:bag_store_dash_board/core/widgets/custom_button.dart';
 import 'package:bag_store_dash_board/core/widgets/custom_text_field.dart';
 import 'package:bag_store_dash_board/features/add_products/presentation/views/widgets/add_products_text_field.dart';
 import 'package:bag_store_dash_board/features/add_products/presentation/views/widgets/image_field.dart';
@@ -15,7 +17,7 @@ class AddProductViewBody extends StatefulWidget {
 
 class _AddProductViewBodyState extends State<AddProductViewBody> {
   final GlobalKey<FormState>formKey=GlobalKey<FormState>();
-  final AutovalidateMode autovalidateMode=AutovalidateMode.disabled;
+   AutovalidateMode autovalidateMode=AutovalidateMode.disabled;
   final TextEditingController brandNameController=TextEditingController();
     final TextEditingController BagController=TextEditingController();
 
@@ -23,6 +25,7 @@ class _AddProductViewBodyState extends State<AddProductViewBody> {
         final TextEditingController priceController=TextEditingController();
                 final TextEditingController newPriceController=TextEditingController();
      final TextEditingController productCodeController=TextEditingController();
+     File ?image;
 
 
 
@@ -45,8 +48,27 @@ class _AddProductViewBodyState extends State<AddProductViewBody> {
                 newPriceController: newPriceController,),
                 SizedBox(height: 16,),
                 ImageField(onFileChanged: (image) {
-                  
-                  },)
+                  this.image=image;
+
+                  },),
+                  SizedBox(height: 24,),
+                  CustomButton(text: 'Add Product', onPressed: (){
+                    if(image!=null){
+                      if(formKey.currentState!.validate()){
+                        formKey.currentState!.save();
+
+                      }else{
+                        autovalidateMode=AutovalidateMode.always;
+                        setState(() {
+                          
+                        });
+                      }
+
+                    }else{
+                      buildErrorBar(context,'please Select an image');
+                    }
+
+                  })
           ],
         ),
       ),
