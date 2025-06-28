@@ -1,5 +1,7 @@
 // features/add_products/presentation/views/widgets/add_product_view_body.dart
 import 'package:bag_store_dash_board/core/widgets/custom_text_field.dart';
+import 'package:bag_store_dash_board/features/add_products/presentation/views/widgets/add_products_text_field.dart';
+import 'package:bag_store_dash_board/features/add_products/presentation/views/widgets/image_field.dart';
 import 'package:flutter/material.dart';
 
 class AddProductViewBody extends StatefulWidget {
@@ -17,6 +19,10 @@ class _AddProductViewBodyState extends State<AddProductViewBody> {
 
     final TextEditingController DescriptionController=TextEditingController();
         final TextEditingController priceController=TextEditingController();
+                final TextEditingController newPriceController=TextEditingController();
+     final TextEditingController productCodeController=TextEditingController();
+
+
 
 
   @override
@@ -28,46 +34,15 @@ class _AddProductViewBodyState extends State<AddProductViewBody> {
           
           children: [
             SizedBox(height:30 ,),
-            Form(
-              key: formKey,
-              autovalidateMode: autovalidateMode,
-              child: Column(
-                children: [
-                  CustomTextField(hintText: ' Enter Bag Name',
-                  controller:brandNameController ,
-                  ),
-                  SizedBox(height: 16,),
-
-                  CustomTextField(hintText: 'Enter Brand Name',
-                  controller:brandNameController ,
-                  ),
-                  SizedBox(height: 16,),
-                  CustomTextField(hintText: ' Enter Description',
-                  maxLine: 5,
-                  controller: DescriptionController,
-                  ),
-                  SizedBox(height: 16,),
-                  CustomTextField(hintText: 'Enter Price',
-                  controller: priceController,
-
-                  ),
-                  SizedBox(height: 16,),
-                  CustomTextField(hintText: 'Enter New Price'
-                  )
-
-
-
-
-
-
-                  
-            
-                ],
-              ),
-              
-              
-              
-            ),
+            AddProductsTextField(formKey: formKey,
+             autovalidateMode: autovalidateMode, 
+             brandNameController: brandNameController,
+              DescriptionController: DescriptionController,
+               priceController: priceController,
+                productCodeController: productCodeController,
+                newPriceController: newPriceController,),
+                SizedBox(height: 16,),
+                ImageField()
           ],
         ),
       ),
