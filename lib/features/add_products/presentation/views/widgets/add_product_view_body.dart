@@ -4,6 +4,7 @@ import 'dart:io';
 import 'package:bag_store_dash_board/core/helper_function/build_error_bar.dart';
 import 'package:bag_store_dash_board/core/widgets/custom_button.dart';
 import 'package:bag_store_dash_board/core/widgets/custom_text_field.dart';
+import 'package:bag_store_dash_board/features/add_products/domain/entites/add_product_entity.dart';
 import 'package:bag_store_dash_board/features/add_products/presentation/views/widgets/add_products_text_field.dart';
 import 'package:bag_store_dash_board/features/add_products/presentation/views/widgets/image_field.dart';
 import 'package:flutter/material.dart';
@@ -57,6 +58,12 @@ class _AddProductViewBodyState extends State<AddProductViewBody> {
                       if(formKey.currentState!.validate()){
                         formKey.currentState!.save();
 
+                       AddProductEntity input=AddProductEntity(
+                         bagName: BagController.text,
+                        brandName: brandNameController.text, 
+                        description: DescriptionController.text,
+                         price: priceController.text,
+                          image: image!);
                       }else{
                         autovalidateMode=AutovalidateMode.always;
                         setState(() {

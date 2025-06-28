@@ -29,6 +29,7 @@ class CustomTextField extends StatelessWidget {
         filled: true,
         suffixIcon:suffixIcon ,
         prefixIcon: prefixIcon,
+        enabled: false,
         hintText: hintText,
         hintStyle:AppStyles.Light16.copyWith(
           color: Color(0xffDFDFDF)
