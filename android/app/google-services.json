@@ -1,0 +1,90 @@
+{
+  "project_info": {
+    "project_number": "478988131941",
+    "project_id": "bag-store-864b6",
+    "storage_bucket": "bag-store-864b6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:478988131941:android:e1292b1f7842e20048b08c",
+        "android_client_info": {
+          "package_name": "com.example.bag_store_dash_board"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "478988131941-2mcliam6khaivcu9i0upj54e170e9n1r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9u6LBk92b_FKNJldoKE5o_FuNGiD_tZA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "478988131941-2mcliam6khaivcu9i0upj54e170e9n1r.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "478988131941-j5nimjq72hgj48j7p69ahqqg17s8sctq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.bagStoreEcommerec"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:478988131941:android:62c588125724d36a48b08c",
+        "android_client_info": {
+          "package_name": "com.example.bag_store_ecommerec"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "478988131941-5bncvap87lhrvplibq3vq2pcbq0jqaj6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bag_store_ecommerec",
+            "certificate_hash": "b5b80258f3587e2d3169704f433678a163e0c288"
+          }
+        },
+        {
+          "client_id": "478988131941-2mcliam6khaivcu9i0upj54e170e9n1r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9u6LBk92b_FKNJldoKE5o_FuNGiD_tZA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "478988131941-2mcliam6khaivcu9i0upj54e170e9n1r.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "478988131941-j5nimjq72hgj48j7p69ahqqg17s8sctq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.bagStoreEcommerec"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
