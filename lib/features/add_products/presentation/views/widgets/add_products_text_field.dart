@@ -54,10 +54,8 @@ class AddProductsTextField extends StatelessWidget {
           controller: priceController,
     
           ),
-          SizedBox(height: 16,),
-          CustomTextField(hintText: 'Enter New Price',
-          controller: newPriceController,
-          )
+          
+         
     
     
     

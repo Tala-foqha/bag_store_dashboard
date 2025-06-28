@@ -1,4 +1,6 @@
 // features/add_products/presentation/views/widgets/add_product_view_body.dart
+import 'dart:io';
+
 import 'package:bag_store_dash_board/core/widgets/custom_text_field.dart';
 import 'package:bag_store_dash_board/features/add_products/presentation/views/widgets/add_products_text_field.dart';
 import 'package:bag_store_dash_board/features/add_products/presentation/views/widgets/image_field.dart';
@@ -42,7 +44,9 @@ class _AddProductViewBodyState extends State<AddProductViewBody> {
                 productCodeController: productCodeController,
                 newPriceController: newPriceController,),
                 SizedBox(height: 16,),
-                ImageField()
+                ImageField(onFileChanged: (image) {
+                  
+                  },)
           ],
         ),
       ),
