@@ -121,6 +121,7 @@ List<String>SelectSize=[];
                         geSize();
 
                        AddProductEntity input=AddProductEntity(
+                        reviews: [],
                          bagName: BagController.text,
                         brandName: brandNameController.text, 
                         description: DescriptionController.text,

@@ -1,6 +1,8 @@
 // features/add_products/domain/entites/add_product_entity.dart
 import 'dart:io';
 
+import 'package:bag_store_dash_board/features/add_products/domain/entites/review_entity.dart';
+
 class AddProductEntity {
   final String bagName;
   final String brandName;
@@ -11,8 +13,9 @@ class AddProductEntity {
     final List<String>size;
  final num avgRating=0;
  final num ratingCount=0;
+ final List<ReviewEntity>reviews;
 
-  AddProductEntity( {
+  AddProductEntity(  {
   required this.bagName,
   required this.brandName,
   required this.description,
@@ -20,5 +23,6 @@ class AddProductEntity {
    required this.image,
     this.imageUrl,
     required this.size,
+    required this.reviews
    });
 }

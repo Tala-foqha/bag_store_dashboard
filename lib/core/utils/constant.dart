@@ -1,0 +1,3 @@
+// core/utils/constant.dart
+ const String supabaseUrl='https://zsurltpgslxnydkzxlbh.supabase.co';
+  const String supabaseKey='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpzdXJsdHBnc2x4bnlka3p4bGJoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTEyNzU3NDAsImV4cCI6MjA2Njg1MTc0MH0.kcMv746UwAai0ckAmWQ2zIDr9-Li3P3HZIrP6NX_WYE';
