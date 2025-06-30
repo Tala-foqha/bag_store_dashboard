@@ -1,5 +1,5 @@
 // core/services/firestore_services.dart
-import 'package:bag_store_ecommerec/core/services/database_services.dart';
+import 'package:bag_store_dash_board/core/services/database_services.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class FirestoreServices implements  DatabaseServices{

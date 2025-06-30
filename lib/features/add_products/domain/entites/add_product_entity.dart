@@ -7,7 +7,7 @@ class AddProductEntity {
   final String description;
   final String price;
   final File image;
-  final String ?imageUrl;
+   String ?imageUrl;
 
   AddProductEntity({
   required this.bagName,
