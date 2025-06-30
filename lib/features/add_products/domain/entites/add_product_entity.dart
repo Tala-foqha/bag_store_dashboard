@@ -8,13 +8,17 @@ class AddProductEntity {
   final String price;
   final File image;
    String ?imageUrl;
+    final List<String>size;
+ final num avgRating=0;
+ final num ratingCount=0;
 
-  AddProductEntity({
+  AddProductEntity( {
   required this.bagName,
   required this.brandName,
   required this.description,
   required this.price, 
    required this.image,
-    this.imageUrl
+    this.imageUrl,
+    required this.size,
    });
 }
