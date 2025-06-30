@@ -10,7 +10,7 @@ class AddProductsTextField extends StatelessWidget {
     required this.autovalidateMode,
     required this.brandNameController,
     required this.DescriptionController,
-    required this.priceController, required this.productCodeController, required this.newPriceController,
+    required this.priceController, required this.productCodeController, required this.newPriceController, required this.bagNameController,
   });
 
   final GlobalKey<FormState> formKey;
@@ -20,6 +20,8 @@ class AddProductsTextField extends StatelessWidget {
   final TextEditingController priceController;
   final TextEditingController productCodeController;
     final TextEditingController newPriceController;
+        final TextEditingController bagNameController;
+
 
   
 
@@ -32,7 +34,7 @@ class AddProductsTextField extends StatelessWidget {
       child: Column(
         children: [
           CustomTextField(hintText: ' Enter Bag Name',
-          controller:brandNameController ,
+          controller:bagNameController ,
           ),
           SizedBox(height: 16,),
     

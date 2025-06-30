@@ -33,7 +33,7 @@ class AddProductModel {
     'brandName':brandName,
     'description':description,
     'price':price,
- 'image':image,
+ 
   'imageUrl':imageUrl
 
 

@@ -1,4 +1,5 @@
 // features/add_products/presentation/manager/add_product/add_product_cubit.dart
+
 import 'package:bag_store_dash_board/core/repos/images_repo/images_repo.dart';
 import 'package:bag_store_dash_board/core/repos/products_repo/products_repo.dart';
 import 'package:bag_store_dash_board/features/add_products/domain/entites/add_product_entity.dart';
@@ -8,7 +9,7 @@ import 'package:meta/meta.dart';
 part 'add_product_state.dart';
 
 class AddProductCubit extends Cubit<AddProductState> {
-  AddProductCubit(this.imagesRepo, this.productsRepo) : super(AddProductInitial());
+  AddProductCubit({required this.imagesRepo,required this.productsRepo}) : super(AddProductInitial());
 final ImagesRepo imagesRepo;
 final ProductsRepo productsRepo;
 Future <void>addProduct(AddProductEntity addProductEntity)async{
@@ -23,6 +24,7 @@ result.fold((failure){
     emit(AddProductFailure(message: failure.message));
   }, (r){
 emit(AddProductSuccess());
+print('added products success');
   });
 
 });

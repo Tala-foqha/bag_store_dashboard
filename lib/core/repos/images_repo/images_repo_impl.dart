@@ -17,6 +17,7 @@ class  ImagesRepoImpl implements ImagesRepo {
   String url=await storageServices.uploadFile(image, BackendEndpoints.images) ;
   return right(url);
 }  catch (e) {
+   print('Upload image error: $e'); 
   return left(ServerFailure('Failed to upload image'));
   
 }
