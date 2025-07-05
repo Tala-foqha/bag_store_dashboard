@@ -64,7 +64,7 @@ class OrderItemWidget extends StatelessWidget {
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
             ),
             Text(
-              orderEntity.shippingAddressModel.toString(),
+              orderEntity.shippingAddressEntity.toString(),
               style: const TextStyle(fontSize: 14),
             ),
             const SizedBox(height: 8),
