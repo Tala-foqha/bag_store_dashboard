@@ -9,7 +9,11 @@ class OrdersViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        FilterSection()  
+        SizedBox(height: 24,),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          child: FilterSection(),
+        )  
       ],
     );
   }

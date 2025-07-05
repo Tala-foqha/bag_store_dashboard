@@ -9,7 +9,7 @@ static const routeName='orders-view';
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-      title: Text('Orders'),
+      title: Center(child: Text('Orders')),
       ),
       body: OrdersViewBody(),
     );
