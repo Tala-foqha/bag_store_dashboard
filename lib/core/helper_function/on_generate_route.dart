@@ -2,6 +2,7 @@
 
 import 'package:bag_store_dash_board/features/add_products/presentation/views/add_product_view.dart';
 import 'package:bag_store_dash_board/features/dash_board/presentation/views/dash_board_view.dart';
+import 'package:bag_store_dash_board/features/orders/presentation/views/orders_view.dart';
 import 'package:flutter/material.dart';
 
 
@@ -12,6 +13,8 @@ Route<dynamic>onGenerateRoute(RouteSettings settings){
 
    case AddProductView.routeName:
    return MaterialPageRoute(builder: (context)=>AddProductView());
+ case OrdersView.routeName:
+   return MaterialPageRoute(builder: (context)=>OrdersView());
 
 
    default: 

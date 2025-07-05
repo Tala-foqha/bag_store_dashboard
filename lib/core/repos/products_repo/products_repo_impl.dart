@@ -2,6 +2,7 @@
 import 'package:bag_store_dash_board/core/errors/failures.dart';
 import 'package:bag_store_dash_board/core/repos/products_repo/products_repo.dart';
 import 'package:bag_store_dash_board/core/services/database_services.dart';
+import 'package:bag_store_dash_board/core/services/storage_services.dart';
 import 'package:bag_store_dash_board/core/utils/backend_endpoints.dart';
 import 'package:bag_store_dash_board/features/add_products/data/models/add_product_model.dart';
 import 'package:bag_store_dash_board/features/add_products/domain/entites/add_product_entity.dart';
@@ -11,7 +12,7 @@ class ProductsRepoImpl implements ProductsRepo {
   @override
   final DatabaseServices databaseServices;
 
-  ProductsRepoImpl({required this.databaseServices});
+  ProductsRepoImpl({required this.databaseServices, required StoarageService storageServices});
   Future<Either<Failure, void>> addProduct(AddProductEntity addProductEntity)async {
     try{
 await databaseServices.addData(collectionName: BackendEndpoints.addProduct, data: AddProductModel.fromEntity(addProductEntity).toJson());

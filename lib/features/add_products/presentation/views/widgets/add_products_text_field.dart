@@ -10,7 +10,8 @@ class AddProductsTextField extends StatelessWidget {
     required this.autovalidateMode,
     required this.brandNameController,
     required this.DescriptionController,
-    required this.priceController, required this.productCodeController, required this.newPriceController, required this.bagNameController,
+    required this.priceController, required this.productCodeController, required this.newPriceController, 
+    required this.bagNameController,
   });
 
   final GlobalKey<FormState> formKey;

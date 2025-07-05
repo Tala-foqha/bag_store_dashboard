@@ -1,6 +1,7 @@
 // features/dash_board/presentation/views/widgets/dash_board_view_body.dart
 import 'package:bag_store_dash_board/core/widgets/custom_button.dart';
 import 'package:bag_store_dash_board/features/add_products/presentation/views/add_product_view.dart';
+import 'package:bag_store_dash_board/features/orders/presentation/views/orders_view.dart';
 import 'package:flutter/material.dart';
 
 class DashBoardViewBody extends StatelessWidget {
@@ -18,7 +19,14 @@ class DashBoardViewBody extends StatelessWidget {
           CustomButton(text: 'Add Product', onPressed: 
           (){
             Navigator.pushNamed(context, AddProductView.routeName);
+          }),
+          SizedBox(height:24),
+            CustomButton(text: 'View Orders', onPressed: 
+          (){
+            Navigator.pushNamed(context, OrdersView.routeName);
+
           })
+
         ],
       ),
     );

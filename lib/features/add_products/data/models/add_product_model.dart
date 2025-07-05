@@ -11,6 +11,7 @@ class AddProductModel {
   final String description;
   final String price;
   final File image;
+  final int sellingCount;
    String ?imageUrl;
  final List<String>size;
  final num avgRating=0;
@@ -18,11 +19,12 @@ class AddProductModel {
  final List<ReviewModel>reviews;
  
 
-  AddProductModel(  {required this.bagName, 
+  AddProductModel(   {required this.bagName, 
   required this.brandName, 
   required this.description,
    required this.price, 
    required this.image,
+    this.sellingCount=0,
    this.imageUrl,
    required this.size,
    required this.reviews
@@ -48,6 +50,7 @@ class AddProductModel {
     'description':description,
     'price':price,
     'size':size,
+    'sellingCount':sellingCount,
  
   'imageUrl':imageUrl
 

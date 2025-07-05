@@ -58,9 +58,11 @@ List<String>SelectSize=[];
              autovalidateMode: autovalidateMode, 
              brandNameController: brandNameController,
               DescriptionController: DescriptionController,
+              
                priceController: priceController,
                 productCodeController: productCodeController,
-                newPriceController: newPriceController, bagNameController: bagNameController,),
+                newPriceController: newPriceController, 
+                bagNameController: bagNameController,),
                 SizedBox(height: 16,),
                 ImageField(onFileChanged: (image) {
                   this.image=image;
