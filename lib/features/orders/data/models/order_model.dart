@@ -1,6 +1,8 @@
 // features/orders/data/models/order_model.dart
 import 'package:bag_store_dash_board/features/orders/data/models/order_product_model.dart';
 import 'package:bag_store_dash_board/features/orders/data/models/shipping_address_model.dart';
+import 'package:bag_store_dash_board/features/orders/domain/entites/order_entity.dart';
+import 'package:bag_store_dash_board/features/orders/domain/entites/order_product_entity.dart';
 
 
 class OrderModel {
@@ -42,4 +44,10 @@ class OrderModel {
       paymentMethod: json["paymentMethod"],
     );
   }
-}
+  toEntity() => OrderEntity(
+  totalPrice: totalPrice,
+  uid: uId,
+  shippingAddressEntity: shippingAddressModel.toEntity(),
+  orderProducts:orderProducts.map((e)=>e.toEntity()).toList(),
+  paymentMethod: paymentMethod,
+);}

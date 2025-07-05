@@ -14,4 +14,6 @@ class OrderProductEntity {
   required this.price, 
   required this.quantity});
 
+  
+
 }

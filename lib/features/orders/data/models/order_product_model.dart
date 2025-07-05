@@ -34,7 +34,7 @@ class OrderProductModel {
       imageUrl: json["imageUrl"],
     );
   }
-  toEntity(){
+OrderProductEntity  toEntity(){
     return OrderProductEntity(
       name: name,
      code: code,

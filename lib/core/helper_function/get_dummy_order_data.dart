@@ -54,7 +54,7 @@ OrderEntity getDummyOrder() {
     totalPrice: totalPrice,
     //status: OrderStatusEnum.pending,
     uid: 'user123',
-    shippingAddressModel: shippingAddress,
+    shippingAddressEntity: shippingAddress,
     orderProducts: orderProducts,
     paymentMethod: 'Cash',
   );
